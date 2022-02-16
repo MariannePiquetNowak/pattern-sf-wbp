@@ -1,17 +1,7 @@
-import React, {Component} from 'react';
-import { Route, Routes, Navigate, Link } from 'react-router-dom';
-import Users from './Users';
-import Posts from './Posts';
-    
-class Home extends Component {
-    
-    render() {
-        return (
-           <div>
-               Coucou
-           </div>
-        )
-    }
+import React, { Component } from 'react'
+
+const Home = () => {
+  return <div>Yeah ! React.js est vivant !</div>
 }
-    
-export default Home;
+
+export default Home
