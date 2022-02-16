@@ -1,0 +1,9 @@
+/* Import bootstrap styles */ 
+@import "~bootstrap/scss/bootstrap";
+
+/* Exemple de variables Saas */
+$color: green;
+
+body {
+    background-color: $color;
+}
