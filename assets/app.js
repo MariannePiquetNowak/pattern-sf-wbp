@@ -1,18 +1,11 @@
-// any CSS you import will output into a single css file (app.css in this case)
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './styles/app.scss';
+import Home from './js/components/Home';
+    
+ReactDOM.render(<Router><Home /></Router>, document.getElementById('root'));
 
-// start the Stimulus application
-import './bootstrap';
+// Tutorial Source : https://www.twilio.com/blog/application-monopage-symfony-php-react
 
-console.log('entry app.js')
-
-// create global $ and jQuery variables
-global.$ = global.jQuery = $;
-
-// this "modifies" the jquery module: adding behavior to it
-// the bootstrap module doesn't export/return anything
-require('bootstrap');
-
-// Pour importer un fichier depuis ./js/
-import './js/test'
 
