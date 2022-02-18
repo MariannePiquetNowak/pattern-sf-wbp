@@ -27,34 +27,25 @@ class MainController extends AbstractController
         $users = [
             [
                 'id' => 1,
-                'name' => 'Olususi Oluyemi',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
-                'imageURL' => 'https://randomuser.me/api/portraits/women/50.jpg'
+                'author' => 'Chris Colborne',
+                'avatarUrl' => 'http://1.gravatar.com/avatar/13dbc56733c2cc66fbc698cdb07fec12',
+                'title' => 'Bitter Predation',
+                'description' => 'Thirteen thin, round towers …',
             ],
             [
                 'id' => 2,
-                'name' => 'Camila Terry',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
-                'imageURL' => 'https://randomuser.me/api/portraits/men/42.jpg'
+                'author' => 'Louanne Perez',
+                'avatarUrl' => 'https://randomuser.me/api/portraits/thumb/women/18.jpg',
+                'title' => 'Strangers of the Ambitious',
+                'description' => "A huge gate with thick metal doors …",
             ],
             [
                 'id' => 3,
-                'name' => 'Joel Williamson',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
-                'imageURL' => 'https://randomuser.me/api/portraits/women/67.jpg'
+                'author' => 'Theodorus Dietvorst',
+                'avatarUrl' => 'https://randomuser.me/api/portraits/thumb/men/49.jpg',
+                'title' => 'Outsiders of the Mysterious',
+                'description' => "Plain fields of a type of grass cover …",
             ],
-            [
-                'id' => 4,
-                'name' => 'Deann Payne',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
-                'imageURL' => 'https://randomuser.me/api/portraits/women/50.jpg'
-            ],
-            [
-                'id' => 5,
-                'name' => 'Donald Perkins',
-                'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation',
-                'imageURL' => 'https://randomuser.me/api/portraits/men/89.jpg'
-            ]
         ];
     
         $response = new Response();
@@ -65,5 +56,6 @@ class MainController extends AbstractController
         $response->setContent(json_encode($users));
         
         return $response;
+
     }
 }
