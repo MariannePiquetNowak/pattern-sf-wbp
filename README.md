@@ -17,3 +17,13 @@ Laisser le serveur front actif pour une auto-compilation
 - Boostrap 
 - JQuery
 - React.js
+
+# To launch project 
+@Link{ https://symfony.com/doc/4.0/setup/built_in_web_server.html }
+- With Symfony CLI
+`symfony server:start` 
+
+- Without Symfony CLI
+`php bin/console server:start` 
+
+`npm run watch` for your front modifications 
